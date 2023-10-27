@@ -166,6 +166,9 @@ helm get manifest myapp901 --revision 1
 # helm get all
 helm get all RELEASE-NAME
 helm get all myapp901
+# helm get all --revision
+helm get all RELEASE-NAME --revision int
+helm get all myapp901 --revision 1
 ```
 
 ## Step-08: Uninstall Helm Release

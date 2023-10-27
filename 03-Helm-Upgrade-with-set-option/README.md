@@ -108,6 +108,11 @@ http://localhost:<NODE-PORT>
 http://localhost:31231
 ```
 
+Overide the values property we can use --set "<property>=<property value>"
+e.g.
+helm upgrade myapp1 kalyan-repo/myapp1 --set "image.tag=4.0.0"
+helm upgrade myapp1 kalyan-repo/myapp1 --set "replicaCount=4"
+
 ## Step-07: Helm History
 - History prints historical revisions for a given release.
 ```t

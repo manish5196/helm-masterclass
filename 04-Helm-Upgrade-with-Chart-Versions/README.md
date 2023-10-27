@@ -32,6 +32,8 @@ Observation: Should display all versions of mychart2
 # Search Helm Repo with --version
 helm search repo mychart2 --version "CHART-VERSIONS"
 helm search repo mychart2 --version "0.2.0"
+helm search repo mychart2 --version="0.2.0"
+helm search repo mychart2 --version=0.2.0
 Observation: Should display specified version of helm chart 
 ```
 

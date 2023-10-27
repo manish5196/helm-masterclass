@@ -58,6 +58,9 @@ which kubectl
 kubectl version 
 kubectl version --short
 kubectl version --client --output=yaml
+kubectl version --client --output=json
+kubectl version --output=json
+kubectl version --output=yaml
 
 # List Config Contexts
 kubectl config get-contexts

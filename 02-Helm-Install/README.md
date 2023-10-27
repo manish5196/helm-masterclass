@@ -29,6 +29,8 @@ helm search repo <KEY-WORD>
 helm search repo nginx
 helm search repo apache
 helm search repo wildfly
+helm search repo <KEY-WORD> --versions
+helm search repo mysql --versions
 ```
 
 ## Step-03: Install Helm Chart
