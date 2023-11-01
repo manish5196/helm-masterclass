@@ -117,6 +117,7 @@ Helm Version: {{ .Capabilities.HelmVersion }}
 Helm Version Semver: {{ .Capabilities.HelmVersion.Version }}
 
 {{/* Template Object */}}
+{{ /* Template object is relavent to current template where it is used*/ }}
 Template Name: {{ .Template.Name }} 
 Template Base Path: {{ .Template.BasePath }}
 

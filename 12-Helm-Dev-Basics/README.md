@@ -79,7 +79,9 @@ helm template myapp101 .
     # quote function
     app.kubernetes.io/managed-by: {{ quote .Release.Service }} 
     # quote function with pipeline
-    app.kubernetes.io/managed-by: {{ .Release.Service | quote }}               
+    app.kubernetes.io/managed-by: {{ .Release.Service | quote }} 
+    # quote function with pipeline
+    app.kubernetes.io/managed-by: {{ .Release.Service | quote | lower }}               
 
 # Change to CHART Directory
 cd helmbasics
