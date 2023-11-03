@@ -50,6 +50,7 @@ Observation: it should be empty. Dependency subcharts not downloaded
 # Helm Dependency Update
 helm dependency update CHART-NAME
 helm dependency update parentchart/
+helm dependency update (run this inside chart folder where we have Chart.yaml)
 ls parentchart/charts
 Observation: 
 1. We should see both charts (mychart1-0.1.0.tgz, mychart2-0.4.0.tgz, mysql-9.9.0.tgz)downloaded to "parentchart/charts" folder
@@ -111,7 +112,7 @@ version: ">= 9.10.8 < 9.11.0"
 ~9.10.1  is equivalent to >= 9.10.1, < 9.11.0 # Patch-level version match
 ~9.10    is equivalent to >= 9.10, < 9.11
 ~9       is equivalent to >= 9, < 10
-^9.x     is equivalent to >= 9.0.0, < 10        
+~9.x     is equivalent to >= 9.0.0, < 10        
 ^0       is equivalent to >= 0.0.0, < 1.0.0
 ```
 ### Step-05-06: Verify with some examples
